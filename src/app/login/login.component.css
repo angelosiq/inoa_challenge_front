@@ -1,0 +1,19 @@
+.justify-content-center {
+  margin-top: 10%;
+}
+
+h4 {
+  padding: 0;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+form div {
+  margin-bottom: 20px;
+}
+
+form label {
+  margin-right: 5px;
+}

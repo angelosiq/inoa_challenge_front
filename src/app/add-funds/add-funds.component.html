@@ -1,0 +1,31 @@
+<section>
+  <div class="row">
+    <div class="col-9">
+      <a class="title">
+        Adicionar fundos à conta
+      </a>
+    </div>
+  </div>
+</section>
+<div class="row justify-content-center">
+  <div class="col-3">
+    <div class="card shadow p-3 mb-5 bg-body-tertiary rounded h-100">
+      <div class="card-body">
+        <form (ngSubmit)="login()">
+          <div class="form-row align-items-center">
+            <div class="col-md-8">
+              <label class="sr-only" for="inlineFormInputName">Valor</label>
+              <input type="number" class="form-control" name="amount" [(ngModel)]="formData.amount" id="inlineFormInputValue" placeholder="1000" required>
+            </div>
+            <div class="col-auto my-1">
+              <button type="submit" class="btn btn-primary">Adicionar</button>
+              <a class="btn btn-danger" (click)="back()">
+                Voltar
+              </a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+.card {
+  width: 18rem;
+  height: 12rem;
+  /* border-radius: 20px; */
+  padding: 20px;
+}
+
+.card-title {
+  color: var(--primary-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+.buy, .sell {
+  margin-left: 10px;
+}

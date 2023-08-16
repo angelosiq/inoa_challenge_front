@@ -1,0 +1,18 @@
+<div class="card shadow p-3 mb-5 bg-body-tertiary rounded">
+  <div class="card-body">
+    <div class="row">
+      <div class="col-8">
+        <h5 class="card-title">{{ stock.symbol }}</h5>
+        <h6 *ngIf="stock.longName" class="card-subtitle mb-2 text-body-secondary">{{ stock.longName }}</h6>
+        <h6 *ngIf="stock.amount" class="card-subtitle mb-2 text-body-secondary">Quantidade de ações: <b>{{ stock.amount }}</b></h6>
+        <h6 *ngIf="stock.total" class="card-subtitle mb-2 text-body-secondary">Valor total: <b>{{ stock.total | currency }}</b></h6>
+        <a *ngIf="stock.regularMarketPrice" class="buy" [routerLink]="['/buy-stocks', stock.symbol]">Comprar</a>
+        <a *ngIf="stock.current_price" class="sell" [routerLink]="['/sell-stocks', stock.symbol]">Vender</a>
+      </div>
+      <div class="col-4">
+        <p *ngIf="stock.regularMarketPrice" class="stock-price">{{ stock.regularMarketPrice | currency }}</p>
+        <p *ngIf="stock.current_price" class="stock-price">{{ stock.current_price | currency }}</p>
+      </div>
+    </div>
+  </div>
+</div>

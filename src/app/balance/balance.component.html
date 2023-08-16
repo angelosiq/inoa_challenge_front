@@ -1,0 +1,8 @@
+<div class="text-center">
+  <h4>Seu saldo</h4>
+  <p *ngIf="balance; else empty" class="balance">{{ balance | currency }}</p>
+  <ng-template #empty>
+    <p class="balance">{{ 0 | currency }}</p>
+  </ng-template>
+  <a class="btn btn-primary" [routerLink]="['/add-funds']">Fazer pix</a>
+</div>
