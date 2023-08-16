@@ -12,12 +12,12 @@
     </div>
   </div>
 </section>
-<section>
+<!-- <section>
   <form>
     <input type="text" placeholder="Filtrar por ação" #filter>
     <button class="primary" type="button" (click)="filterResults(filter.value)">Buscar</button>
   </form>
-</section>
+</section> -->
 <section class="results">
   <app-stock
     *ngFor="let stock of filteredStocksList"
